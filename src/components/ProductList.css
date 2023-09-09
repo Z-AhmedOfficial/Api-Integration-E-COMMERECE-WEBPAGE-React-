@@ -1,0 +1,53 @@
+/* src/components/ProductList.css */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Set a fixed height for all cards */
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    background-color: black;
+    color: white;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+    flex-grow: 1; /* Allow the image to grow and take up remaining space */
+  }
+  
+  .product-card h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-decoration: none;
+    color: red;
+  }
+  
+  .product-card p {
+    font-size: 1rem;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #888;
+  }
+  
+.bt1{
+    padding: 20px;
+    font-size: 2em;
+    background-color: black;
+    color: red;
+    border: none;
+    border-radius: 25px;
+}
